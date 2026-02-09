@@ -32,7 +32,7 @@ function login() {
   localStorage.setItem("role", accounts[username].role);
 
   // Redirect to resume page
-  window.location.href = "resume.html";
+  window.location.href = "index.html";
 }
 
 function logout() {
@@ -57,6 +57,6 @@ function requireAdmin() {
   // LEAST PRIVILEGE: only admin can access
   if (role !== "admin") {
     alert("Access Denied: Admin privileges required.");
-    window.location.href = "resume.html";
+    window.location.href = "index.html";
   }
 }
