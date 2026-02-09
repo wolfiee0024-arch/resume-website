@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel</title>
+
+  <script src="auth.js"></script>
+  <script>
+    requireAdmin();
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      padding: 40px;
+    }
+    .box {
+      background: #111827;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 600px;
+    }
+    a {
+      color: #60a5fa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Admin Panel</h1>
+    <p>Only admins can access this page.</p>
+
+    <p>
+      <a href="index.html">Go to Resume</a>
+    </p>
+
+    <button onclick="logout()" style="
+      margin-top: 15px;
+      padding: 10px 14px;
+      border: none;
+      border-radius: 8px;
+      background: #dc2626;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    ">
+      Logout
+    </button>
+  </div>
+
+</body>
+</html>
